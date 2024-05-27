@@ -1,0 +1,32 @@
+.tablet {
+    --width-tablet: 1245px;
+    --height-tablet: 728px;
+    --border-radius-tablet: 27px;
+
+    width: var(--width-tablet);
+    height: var(--height-tablet);
+    border-radius: var(--border-radius-tablet);
+
+    position: relative;
+
+    transition: width 0.5s ease, height 0.5s ease, border-radius 0.5s ease;
+    animation: slideTopToBottom 0.5s ease-in-out;
+
+    /* TODO: Adicionar background e borda */
+    background-color: var(--bg-color);
+    box-shadow: 0 0 0 2px #34343D;
+}
+
+.tablet.maximed { /* Estilização para o tablet maximizado */
+    --width-tablet: 100vw;
+    --height-tablet: 100vh;
+    --border-radius-tablet: 0;
+}
+
+
+/* ----- ANIMATIONS ----- */
+
+@keyframes slideTopToBottom {
+    from { transform: translateY(-200%) }
+    to { transform: translateY(0) }
+}
