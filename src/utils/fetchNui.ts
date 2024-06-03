@@ -12,9 +12,9 @@ import { isEnvBrowser } from "./misc";
  * @return returnData - A promise for the data sent back by the NuiCallbacks CB argument
  */
 
-export async function fetchNui<T = unknown>(
+export async function fetchNui<T = any>(
   eventName: string,
-  data?: unknown,
+  data?: any,
   mockData?: T,
 ): Promise<T> {
   const options = {

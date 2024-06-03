@@ -1,0 +1,75 @@
+.table-players {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+
+    background: var(--box-primary);
+    border-radius: 10px;
+}
+
+.table-players th, .table-players td {
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #2b2b38;
+}
+
+.table-players tr:nth-child(even) {
+    background: #232330;
+}
+
+.table-players thead tr {
+    background: #232330;
+}
+
+.table-players thead th {
+    font-weight: 500;
+}
+
+.table-players tbody td {
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+.table-players tbody .player-id {
+    font-style: italic;
+    text-align: center;
+}
+
+.table-players tbody .player-mention {
+    color: white!important;
+    
+    font-style: italic;
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+}
+
+.table-players tbody .player-mention img.player-avatar {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+}
+
+.table-players tbody .player-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.table-players tbody .player-actions i {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.table-players tbody .player-actions i:hover {
+    color: white;
+}
+
+.table-players tbody .player-actions i[itemid="trash"]:hover {
+    color: rgb(255, 70, 70);
+}

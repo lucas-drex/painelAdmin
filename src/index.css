@@ -1,21 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --bg-color: #101015;
-  --box-primary: #15151A;
+  --bg-color: #14141c;
+  --box-primary: #171721;
 
-  --color-primary: #5012FF;
+  --color-primary: #2458A1;
+
+  --text-primary: #ffffff;
+  --text-secondary: #83858f ;
+  
+  --font: "Poppins", sans-serif;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  user-select: none;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  color: white;
+  font-family: var(--font);
 }
 
 #root {

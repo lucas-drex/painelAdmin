@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: './',
   build: {
-    outDir: 'C:/Black Exclusive 6.0 - Atualizada 16.05/server/resources/[apex]/apex_admin/web',
+    outDir: 'C:/Black Exclusive 6.0 - Atualizada 16.05/server/resources/[suits]/sgadmin/web',
   },
 });

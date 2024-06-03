@@ -1,0 +1,106 @@
+.modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* padding: 10px; */
+    border-radius: 10px;
+    background: var(--box-primary);
+
+    min-width: 350px;
+
+}
+
+.player-banner {
+    --height: 90px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+
+    width: 100%;
+    height: var(--height);
+}
+
+.player-banner img.banner {
+    object-fit: cover;
+    width: 100%;
+    height: var(--height);
+    /* filter: blur(4px); */
+}
+
+.player-details {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.player-details .player-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+
+    gap: 15px;
+    padding-bottom: 1.5rem;
+}
+
+.player-details .player-info img.player-avatar {
+    --size-avatar: 70px;
+    width: var(--size-avatar);
+    height: var(--size-avatar);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -15px;
+    z-index: 10;
+    outline: 7px solid var(--box-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.player-account {
+    /* text-align: center; */
+}
+
+.player-account .player-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.player-account .player-steam {
+    font-size: 0.85rem;
+    color: var(--text-secondary)
+}
+
+.player-account .player-steam .value {
+    margin-left: 5px;
+}
+
+.player-account .player-steam .invisible {
+    background: linear-gradient(90deg,#2F3349,#3f435c,#2F3349);
+    color: transparent;
+
+    background-size: 100% 30px;
+    border-radius: 3px;
+
+    animation: loading 3s infinite;
+    cursor: pointer;
+}
+
+.player-details .player-categories__container {
+    margin-bottom: 15px;
+}
+
+.player-details .player-categories {
+    display: flex;
+    gap: 5px;
+    border-bottom: 1px solid #232330;
+}
+
+.player-details .player-category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 8px;
+    border-radius: 8px 8px 0 0;
+    background: var(--color-primary);
+    font-size: 0.8rem;
+}
